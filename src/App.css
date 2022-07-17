@@ -1,4 +1,3 @@
-.text {
-  padding: 50%;
+.box {
+    display: flex;
 }
-

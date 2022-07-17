@@ -1,0 +1,9 @@
+.box {
+    display: block;
+    align-items: center;
+    text-align: center;
+    }
+
+.card w-25 {
+    text-align: center;
+}
