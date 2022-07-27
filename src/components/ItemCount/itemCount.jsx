@@ -4,7 +4,7 @@ import './itemCount.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ItemCount = ({initial = 1, stock =  5, onAdd}) => {
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState(1); /*El hook guardando la cantidad solicitada*/
 
   const handleClickPlus = () => {
     if (count<stock){

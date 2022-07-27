@@ -1,8 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-const ItemDetail = ({prod}) => {
-  console.log(prod)
+const ItemDetail = ({prod}) => { /*Generando el producto*/
   return (
     <Card className="text-center">
       <Card.Header>

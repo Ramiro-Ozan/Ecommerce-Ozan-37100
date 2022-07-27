@@ -15,7 +15,6 @@ function App() {
         <Routes>
           <Route index path='/' element = { <ItemListContainer /> } />
           <Route path='/detail/:detalledId' element = { <ItemDetailContainer /> } />
-
           
         </Routes>
       </>

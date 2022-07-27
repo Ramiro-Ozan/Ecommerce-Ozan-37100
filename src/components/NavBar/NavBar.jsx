@@ -18,9 +18,7 @@ const NavBar = () => {
                         <Nav.Link href="#aboutUs">About Us</Nav.Link>
                         <NavDropdown title="Accesories" id="collasible-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">Shirts</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">
-                            Shoes
-                        </NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.2">Shoes</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.3">Perfumes</NavDropdown.Item>
                         <NavDropdown.Divider />
                         <NavDropdown.Item href="#action/3.4">

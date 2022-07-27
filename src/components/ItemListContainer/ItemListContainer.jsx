@@ -6,14 +6,14 @@ import ItemList from './ItemList'
 
 
 const ItemListContainer = () => {
-  const [productos, setProductos] = useState([])
-  const [loading, setLoading] = useState(true)
+  const [productos, setProductos] = useState([]) /*Hook de estado, guardando la informacion de los productos.*/
+  const [loading, setLoading] = useState(true) /*Proyectando el loading en pantalla.*/
 
-  const {categoriaId} = useParams()
+  const {categoriaId} = useParams() /*Hook llamando al objeto*/
 
-  useEffect( ()=> {
-    if (categoriaId) {
-      getFetch()
+  useEffect( ()=> { 
+    if (categoriaId) { 
+      getFetch() /*Simulando el mock*/
       .then(resp => setProductos(resp.filter(prod => prod.category === categoriaId)))
       .catch(err => console.log(err) )
       .finally(()=> setLoading(false) )
@@ -26,14 +26,14 @@ const ItemListContainer = () => {
   },[categoriaId])
 
   const onAdd = () => {
-    console.log("Gracias por su compra")
+    /*Todavia indeciso en que es lo que quiero con esto*/
   };
 
   return (
     <div>
       {
         loading ? 
-          <h1>Loading...</h1>
+          <h1>Loading...</h1> /*Utilizando intercambiabilidad*/
           :
           <ItemList productos={productos} />
       }

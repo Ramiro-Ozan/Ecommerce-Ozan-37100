@@ -10,7 +10,7 @@ let productos = [
 
 export const getFetch = (id) => {
     return new Promise((resolve,reject) => {
-        setTimeout(()=>{
+        setTimeout(()=>{ /*Simulacion de un mock*/
             if (id) {
                 resolve(productos.find(producto => producto.id == id))
             } else {

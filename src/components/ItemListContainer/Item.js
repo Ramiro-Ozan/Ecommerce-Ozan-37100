@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-const Item = ( {prod} ) => {
+const Item = ( {prod} ) => { /*Mostrando los items por individual, segun su propia informacion*/
     return (
         <div className='col-md-4 p-1'>
             <div className='card w-100 mt-5'>
