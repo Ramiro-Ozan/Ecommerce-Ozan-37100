@@ -14,6 +14,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route index path='/' element = { <ItemListContainer /> } />
+          <Route path='/category/:detalledCategory' element = { <ItemListContainer /> } />
           <Route path='/detail/:detalledId' element = { <ItemDetailContainer /> } />
           
         </Routes>
